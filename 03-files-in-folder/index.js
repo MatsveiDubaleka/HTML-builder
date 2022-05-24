@@ -33,5 +33,5 @@ fs.readdir(truePath, { withFileTypes: true }, (err, files) => {
 });
 
 function getFullInfo(name, ext, size) {
-  console.log(name + ' - ' + ext + ' - ' + size);
+  console.log(name + ' - ' + ext + ' - ' + size + 'bytes ');
 }
