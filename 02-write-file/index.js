@@ -19,6 +19,7 @@ const rl = readline.createInterface(process.stdin, process.stdout);
 rl.on('SIGINT', () => {
   process.emit('SIGINT');
   console.log('goodbye');
+  rl.close();
 });
 
 rl.on('line', (input) => {
