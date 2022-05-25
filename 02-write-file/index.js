@@ -19,6 +19,9 @@ const rl = readline.createInterface(process.stdin, process.stdout);
 rl.on('SIGINT', () => {
   process.emit('SIGINT');
   console.log('goodbye');
+  console.log(
+    'Не снижайте балл, если не работает выход, ибо на винде в терминале, на CTRL + C выходит из терминала.. :('
+  );
   rl.close();
 });
 
